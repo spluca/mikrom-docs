@@ -1,6 +1,6 @@
 {
 	"compatibility_date": "2026-04-03",
-	"compatibility_flags": ["global_fetch_strictly_public"],
+	"compatibility_flags": ["global_fetch_strictly_public", "nodejs_compat"],
 	"name": "mikrom-docs",
 	"main": "@astrojs/cloudflare/entrypoints/server",
 	"assets": {
@@ -9,5 +9,11 @@
 	},
 	"observability": {
 		"enabled": true
-	}
+	},
+  "router": [
+    {
+      "pattern": "docs.mikrom.es",
+      "custom_domain": true
+    }
+  ]
 }
